@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="number" placeholder="enter 1st Number" id="num1" />
+  <input type="number" placeholder="enter 2nd Number" id="num2" />
+  <br>
+  <br>
+  <button id="1stbutton">Add</button>
+  <button id="2ndbutton">Subtract</button>
+  <button id="3rdbutton">Multiply</button>
+  <button id="4rtbutton">Divide</button>
+  <br>
+  <br>
+  <input type="number" placeholder="result" id="result" />
+</body>
+
+</html>
+<script>
+  var n1 = document.getElementById("num1");
+  var n2 = document.getElementById("num2");
+  var res = document.getElementById("result");
+
+
+  document.getElementById("1stbutton").addEventListener("click", function () {
+    res.value =
+      parseInt(n1.value) + parseInt(n2.value);
+  })
+
+  document.getElementById("2ndbutton").addEventListener("click", function () {
+    res.value =
+      parseInt(n1.value) - parseInt(n2.value);
+  })
+
+  document.getElementById("3rdbutton").addEventListener("click", function () {
+    res.value =
+      parseInt(n1.value) * parseInt(n2.value);
+  })
+
+  document.getElementById("4rtbutton").addEventListener("click", function () {
+    res.value =
+      parseInt(n1.value) / parseInt(n2.value);
+  })
+
+  document.getElementById("1stbutton").addEventListener("click", function () {
+    res.value =
+      parseInt(n1.value) + parseInt(n2.value);
+  })
+
+
+</script>
